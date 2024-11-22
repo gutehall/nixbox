@@ -1,7 +1,7 @@
-BUILDER ?= virtualbox-iso.virtualbox
-VERSION ?= 23.05
-ARCH ?= x86_64
-REPO ?= nixbox/nixos
+BUILDER ?= parallels-iso.parallels
+VERSION ?= 24.11
+ARCH ?= aarch64
+REPO ?= gutehall/nixos
 USE_EFI ?= false
 REPO_NAME = $(word 1, $(subst /, ,${REPO}))
 BOX_NAME = $(word 2, $(subst /, ,${REPO}))
